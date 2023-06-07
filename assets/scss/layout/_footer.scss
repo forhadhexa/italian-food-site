@@ -1,0 +1,58 @@
+// footer section --------
+.footer-section {
+    background-color: rgb(39, 41, 44);
+    padding: 100px 0px;
+
+    .footer-top {
+        .sub-title {
+            color: $main-color;
+        }
+        .social-link {
+            li {
+                padding: 5px 5px 0px 5px; 
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+            a {
+                color: $main-color;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                border: 1px solid #ffffff32;
+                transition: all 0.3s;
+                overflow: hidden;
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+        .footer-widget {
+            padding: 0px 20px;
+            .footer-widget-body { 
+                .sub-title {
+                    padding-top: 10px;
+                }
+                .about-link,
+                .service-link,
+                .others-link {
+                    padding: 15px 0;
+                   li {
+                    a {
+                        color: $main-color;
+                        padding: 2px 0;
+                    };
+                   }
+                }
+            }
+        }
+    }
+}
+
+
+  

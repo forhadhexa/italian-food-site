@@ -1,0 +1,199 @@
+.menu-section {
+    padding-bottom: 60px;
+    .menu {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .menu-title {
+        .menu-head{
+            color: black;
+            font-size: 140px;
+            font-family: $title-fonts;
+        }
+        .body-text {
+            font-size: 24px;
+            font-family: $boby-fonts;
+        }
+    }
+}
+
+.menu-section {
+    .menu-content {
+        .thumb {
+            height: 370px;
+            img {
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .content {
+            .clamp {
+                font-family: $boby-fonts;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: -webkit-line-clamp 0.5s ease-in-out; /* add a transition to the -webkit-line-clamp property */
+            }
+            .show-more {
+                -webkit-line-clamp: unset; /* unset the -webkit-line-clamp property to show the full paragraph */
+                transition: -webkit-line-clamp 0.5s ease-in-out; /* add a transition to the -webkit-line-clamp property */
+            }
+        }
+    }
+}
+
+
+
+// more info section ----
+
+.more-info {
+    background-color: rgb(39, 41, 44);
+    padding-bottom: 50px;
+    .info-title {
+        .info-title-body {
+            font-size: 140px;
+            font-family: $title-fonts;
+        }
+    }
+    .info-type {
+        padding-top: 30px;
+    }
+    .info-body {
+        .info-body-title {
+            color: #fff;
+            font-size: 22px;
+            font-family: $boby-fonts;
+        }
+    }
+}
+
+
+
+// discount section-------
+.discount-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .discount-content {
+        padding-top: 60px;
+        .title {
+            color: #000;
+            font-family: $boby-fonts;
+            font-weight: 600;
+        }
+        .sub-title {
+            font-size: 22px;
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+
+// best-pizza -----
+.best-piza {
+    background: url(../images/001.png) center;
+    background-size: cover;
+    padding-top: 50px;
+    position: relative;
+    &::before {
+            position: absolute;
+            content: "";
+            background: url(../images/tt.png);
+            top: -170px;
+            left: 195px;
+            width: calc(100% - 220px);
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    .best-pizza-title {
+        .pizza-tite {
+            font-size: 100px;
+            font-family: $title-fonts;
+            padding-bottom: 20px;
+        }
+        .pizza-sub-title {
+            font-size: 22px;
+
+            padding-bottom: 20px;
+        }
+    }
+    .best-pizza-img {
+        margin-bottom: -160px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 58%;
+            left: 7%;
+            width: 550px;
+            height: 375px;
+            background: url(../images/0041.png
+            );
+            background-repeat: no-repeat;
+        }
+        .pizza-img {
+            padding-top: 70px;
+            margin-left: 230px;
+        }
+    }
+}
+
+  
+// testimonial section -----------
+.testimonial-section {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    .testimonial-review {
+        padding-bottom: 100px;
+        .testimonial-comment {
+            padding-top: 120px;
+            .title {
+                font-family: $title-fonts;
+                color: #000;
+                font-size: 90px;
+            }
+            .sub-title {
+                font-weight: 400;
+            }
+        }
+    }
+    .testimonial-slider {
+        .testimonial-body {
+           padding: 0px 190px;
+           .comment {
+                color: #000;
+            }
+            .sub-comment {
+                padding-top: 20px;
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50px);
+            border-radius: 15%;
+            background-color: #000;
+            color: $main-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .prev {
+            margin-left: -40px;
+        }
+        .next {
+            right: 0;
+            margin-right: -40px;
+        }
+    }
+}
+
+

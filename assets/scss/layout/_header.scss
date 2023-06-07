@@ -1,0 +1,50 @@
+
+
+
+.header-section {
+    .header-img {
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 140px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 73%;
+            left: -25%;
+            background: url(../images/002.png);
+            background-repeat: no-repeat;
+            width: 290px;
+            height: 290px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 70%;
+            right: -11%;
+            width: 550px;
+            height: 470px;
+            background: url(../images/003.png
+            );
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+.home-content {
+    padding: 100px 0;
+    .home-title {
+        padding-top: 30px;
+        .title-1 {
+            font-family: $title-fonts;
+            font-size: 100px;
+        }
+        .title-2 {
+            font-family: $boby-fonts;
+            font-size: 35px;
+        }
+    }
+    .home-title2 {
+        padding-top: 15px;
+    }
+}
