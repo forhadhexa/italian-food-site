@@ -127,6 +127,115 @@ span {
   text-transform: uppercase;
 }
 
+.btn-effect {
+  padding: 5px 20px;
+  color: #fff;
+  border: 2px solid #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 1;
+}
+.btn-effect::after {
+  position: absolute;
+  content: "";
+  transition: 0.3s;
+  width: 0;
+  left: -10%;
+  bottom: 0;
+  height: 120%;
+  background: #f7f7f7;
+  transform: skewX(15deg);
+  z-index: -1;
+}
+.btn-effect:hover {
+  cursor: pointer;
+  color: #000;
+}
+.btn-effect:hover:after {
+  width: 120%;
+  left: -10%;
+}
+
+.btn-2effect {
+  padding: 5px 20px;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 1;
+}
+.btn-2effect:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #000;
+}
+.btn-2effect:hover::after {
+  width: 0%;
+}
+
+.btn-3effect {
+  color: #fff;
+  cursor: pointer;
+  line-height: 30px;
+  max-width: 185px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn-3effect:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-1 {
+  background-color: #000;
+  padding: 8px 10px;
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+.btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-1 svg rect {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.4s linear;
+}
+.btn-1:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 81, 292;
+  stroke-dashoffset: 90;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .footer-section {
   background-color: rgb(39, 41, 44);
   padding: 100px 0px;
